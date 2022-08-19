@@ -11,6 +11,9 @@ function loginFunction() {
         },2000)
       } else {
         loginMessage.innerText = 'Your information is incorrect, Please use below details to login'
+        setTimeout(function () {
+            loginMessage.innerText = '';
+        },2000)
       }
 }
 

@@ -1,3 +1,19 @@
+const userEmail = document.getElementById('user-email')
+const userPassword = document.getElementById('user-password')
+const loginMessage = document.querySelector('.login-message')
+// login btn event handler 
+function loginFunction() {
+    if ((userEmail.value === 'user@digitalbank.com') && (userPassword.value === 'digitalBank')) {
+    
+        loginMessage.innerText = 'Signing to Digital Bank....'
+        setTimeout(function () {
+            window.location.href="dashboard.html"
+        },2000)
+      } else {
+        loginMessage.innerText = 'Your information is incorrect, Please use below details to login'
+      }
+}
+
 // get the input field value
 function getInputFieldValue(inputField){
 

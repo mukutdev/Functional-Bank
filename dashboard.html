@@ -1,0 +1,50 @@
+<!DOCTYPE html> 
+ <html lang="en"> 
+ <head> 
+   <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+ <title>Simple Bank</title> 
+ <script src="https://cdn.tailwindcss.com"></script> 
+  
+ </head> 
+ <body> 
+ <header class="py-6"> 
+ <h1 class="text-4xl text-center font-semibold text-purple-700">Hi,Welcome To Your Personal Bank </h1> 
+ </header> 
+ <main class="w-6/12 mx-auto"> 
+ <section class="my-20" id="dashboard-area"> 
+ <div class ="grid grid-cols-3 gap-4">
+   <div class="bg-purple-700 p-8 rounded-md text-white">
+     <h2 class= "text-3xl">Deposit</h2>
+     <h3 class= "text-5xl py-3">$<span id="deposit-value">00</h3>
+   </div>
+<div class="bg-orange-600 p-8 rounded-md text-white">
+     <h2 class="text-3xl">Withdraw </h2>
+     <h3 class="text-5xl py-3">$<span id="withdraw-value">00</h3>
+   </div>
+   <div class="bg-rose-600 p-8 rounded-md text-white">
+     <h2 class="text-3xl">Balance</h2>
+     <h3 class="text-5xl py-3">$<span id="total-field">00</h3>
+   </div>
+ </div>
+  </section>
+  <section class="my-8">
+    <div class="grid grid-cols-2 gap-4 ">
+      <div class="bg-purple-700 p-8 rounded-md ">
+        <h2 class="font-semibold text-white">Please Enter Deposit Amount </h2>
+        <input type="number" class="w-2/3 my-4 p-3 text-base text-slate-900 rounded-md outline-none" id="deposit-field" placeholder="$ Enter Deposit Amount"><br>
+        <button  class="bg-slate-50 font-semibold text-slate-800 px-8 py-3 rounded-md hover:bg-rose-500 hover:text-white" id="deposit-button">Deposit</button>
+      </div>
+       <div class="bg-rose-600 p-8 rounded-md text-white">
+         <h2 class="font-semibold text-white">Please Enter Withdraw Amount </h2>
+         <input type="number" class=" w-2/3 rounded-md my-4 p-3 text-base text-slate-900 outline-none" name="" id="withdraw-field" placeholder="$ Enter Withdraw Amount"><br>
+         <button class="bg-slate-50 font-semibold text-slate-800 px-8 py-3 rounded-md hover:bg-purple-700 hover:text-white" id="withdraw-button">Withdraw</button>
+       </div>
+      </div>
+  </section>
+  </main> 
+<script src="./index.js"></script>
+ <!-- <script src="./app.js"></script> -->
+ </body> 
+ </html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Bank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header class="py-6">
+        <h1 class="text-4xl text-center font-semibold text-purple-700"> Welcome To Digital Bank </h1>
+    </header>
+    <main>
+        <section class="my-20" id="login-area" >
+            <div class="flex flex-col bg-purple-700 py-11 px-16 w-6/12 justify-center mx-auto  rounded-xl shadow-2xl" id="login-form">
+                <h2 class="text-white text-2xl text-center py-6 font-semibold">Login Your Digital Bank Account</h2>
+                 <input type="email" class="my-4 p-3 text-base rounded-sm outline-none" name="" id="user-email" placeholder="Enter Your Email Address">
+                 <input type="password" class="rounded-sm p-3 outline-none" name="" id="user-password" placeholder="Enter Your password">
+                 <button onclick="loginFunction()" class="bg-slate-100 cursor-pointer my-3 py-3 px-11 font-semibold text-lg rounded-sm hover:bg-purple-500 hover:text-white flex  justify-center mx-auto " id="login-btn">Login</button>
+                 <p class="login-message text-lg font-medium py-4 text-white"></p>
+            </div>
+        </section>
+
+    </main>
+
+<script src="./index.js"></script>
+ <!-- <script src="./app.js"></script>    -->
+</body>
+</html>
